@@ -4,8 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy · Guru Bakthi</title>
-  <meta name="description" content="Privacy Policy for the Guru Bakthi app. The app collects no personal data.">
+  <meta name="description" content="Privacy Policy for the Guru Bakthi app (English and Tamil). The app collects no personal data.">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .lang-toggle {
+      display: inline-flex;
+      gap: 4px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px;
+      margin: 4px 0 10px;
+      background: var(--surface);
+    }
+    .lang-btn {
+      border: 0;
+      background: none;
+      color: var(--muted);
+      font: inherit;
+      font-weight: 700;
+      padding: 6px 16px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+    .lang-btn.active { background: var(--maroon); color: #fff; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .lang-btn.active { color: #1a1410; }
+    }
+    .lang-content[hidden] { display: none; }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -24,36 +50,74 @@
   </header>
 
   <main class="wrap">
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 28, 2026</p>
-
-    <div class="card">
-      <p><strong>Guru Bakthi does not collect any personal data.</strong> The app is a simple reader for Tamil devotional texts, and it is designed to respect your privacy completely.</p>
+    <div class="lang-toggle" role="group" aria-label="Choose language">
+      <button type="button" class="lang-btn" data-lang="en">English</button>
+      <button type="button" class="lang-btn" data-lang="ta">தமிழ்</button>
     </div>
 
-    <h2>Information we collect</h2>
-    <p>None. We do not collect, store, or transmit any personal information. The app has no accounts, no sign-in, and requires no permissions to read the texts.</p>
+    <!-- English -->
+    <section class="lang-content" data-lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: October 28, 2026</p>
 
-    <h2>Data stored on your device</h2>
-    <p>To let you continue reading where you left off, the app saves your reading position (which book and page) <strong>locally on your device only</strong>. This information never leaves your device and is not shared with us or anyone else. Removing the app deletes it.</p>
+      <div class="card">
+        <p><strong>Guru Bakthi does not collect any personal data.</strong> The app is a simple reader for Tamil devotional texts, and it is designed to respect your privacy completely.</p>
+      </div>
 
-    <h2>Analytics, tracking, and advertising</h2>
-    <p>The app contains <strong>no analytics, no tracking technologies, and no advertising</strong>. We do not use any third-party SDKs that collect data.</p>
+      <h2>Information we collect</h2>
+      <p>None. We do not collect, store, or transmit any personal information. The app has no accounts, no sign-in, and requires no permissions to read the texts.</p>
 
-    <h2>Network use</h2>
-    <p>All texts and images are bundled inside the app, so it works fully offline. The app does not send your information over the internet.</p>
+      <h2>Data stored on your device</h2>
+      <p>To let you continue reading where you left off, the app saves your reading position (which book and page) <strong>locally on your device only</strong>. This information never leaves your device and is not shared with us or anyone else. Removing the app deletes it.</p>
 
-    <h2>Children's privacy</h2>
-    <p>The app is suitable for all ages and does not knowingly collect any information from anyone, including children.</p>
+      <h2>Analytics, tracking, and advertising</h2>
+      <p>The app contains <strong>no analytics, no tracking technologies, and no advertising</strong>. We do not use any third-party SDKs that collect data.</p>
 
-    <h2>Changes to this policy</h2>
-    <p>If this policy changes, the updated version will be posted on this page with a new date above.</p>
+      <h2>Network use</h2>
+      <p>All texts and images are bundled inside the app, so it works fully offline. The app does not send your information over the internet.</p>
 
-    <h2>Contact</h2>
-    <p>If you have any questions about this Privacy Policy, contact us at
-      <a href="mailto:gurubakthisupport@gmail.com?subject=Guru%20Bakthi%20Privacy">gurubakthisupport@gmail.com</a>.</p>
+      <h2>Children's privacy</h2>
+      <p>The app is suitable for all ages and does not knowingly collect any information from anyone, including children.</p>
 
-    <p class="tamil">இந்தச் செயலி எந்தவொரு தனிப்பட்ட தகவலையும் சேகரிக்காது. உங்கள் வாசிப்பு இடம் மட்டும் உங்கள் சாதனத்தில் மட்டுமே சேமிக்கப்படுகிறது.</p>
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes, the updated version will be posted on this page with a new date above.</p>
+
+      <h2>Contact</h2>
+      <p>If you have any questions about this Privacy Policy, contact us at
+        <a href="mailto:gurubakthisupport@gmail.com?subject=Guru%20Bakthi%20Privacy">gurubakthisupport@gmail.com</a>.</p>
+    </section>
+
+    <!-- Tamil -->
+    <section class="lang-content" data-lang="ta" lang="ta" hidden>
+      <h1>தனியுரிமைக் கொள்கை</h1>
+      <p class="updated">கடைசியாகப் புதுப்பிக்கப்பட்டது: அக்டோபர் 28, 2026</p>
+
+      <div class="card">
+        <p><strong>குரு பக்தி எந்தவொரு தனிப்பட்ட தரவையும் சேகரிக்காது.</strong> இது தமிழ்ப் பக்தி நூல்களைப் படிக்கும் எளிய வாசிப்புக் கருவி; உங்கள் தனியுரிமையை முழுமையாக மதிக்கும் வகையில் வடிவமைக்கப்பட்டுள்ளது.</p>
+      </div>
+
+      <h2>நாங்கள் சேகரிக்கும் தகவல்</h2>
+      <p>எதுவுமில்லை. நாங்கள் எந்தத் தனிப்பட்ட தகவலையும் சேகரிக்கவோ, சேமிக்கவோ, அனுப்பவோ இல்லை. செயலியில் கணக்குகள் இல்லை, உள்நுழைவு இல்லை, நூல்களைப் படிக்க எந்த அனுமதியும் தேவையில்லை.</p>
+
+      <h2>உங்கள் சாதனத்தில் சேமிக்கப்படும் தரவு</h2>
+      <p>நீங்கள் நிறுத்திய இடத்திலிருந்து தொடர்ந்து படிக்க, உங்கள் வாசிப்பு இடம் (எந்த நூல், எந்தப் பக்கம்) <strong>உங்கள் சாதனத்தில் மட்டுமே</strong> சேமிக்கப்படுகிறது. இந்தத் தகவல் உங்கள் சாதனத்தை விட்டு வெளியேறாது; எங்களுடனோ வேறு எவருடனோ பகிரப்படாது. செயலியை நீக்கினால் இதுவும் நீக்கப்படும்.</p>
+
+      <h2>பகுப்பாய்வு, கண்காணிப்பு, விளம்பரம்</h2>
+      <p>இந்தச் செயலியில் <strong>எந்தப் பகுப்பாய்வும் (analytics), கண்காணிப்புத் தொழில்நுட்பமும், விளம்பரமும் இல்லை</strong>. தரவு சேகரிக்கும் எந்த மூன்றாம் தரப்பு SDK-களையும் நாங்கள் பயன்படுத்தவில்லை.</p>
+
+      <h2>இணைய பயன்பாடு</h2>
+      <p>அனைத்து நூல்களும் படங்களும் செயலிக்குள்ளேயே இணைக்கப்பட்டுள்ளதால், இணையம் இல்லாமலும் முழுமையாக இயங்கும். செயலி உங்கள் தகவலை இணையம் வழியாக அனுப்பாது.</p>
+
+      <h2>குழந்தைகளின் தனியுரிமை</h2>
+      <p>இந்தச் செயலி அனைத்து வயதினருக்கும் ஏற்றது; குழந்தைகள் உட்பட யாரிடமிருந்தும் எந்தத் தகவலையும் அறிந்தே சேகரிக்காது.</p>
+
+      <h2>இந்தக் கொள்கையில் மாற்றங்கள்</h2>
+      <p>இந்தக் கொள்கை மாறினால், புதுப்பிக்கப்பட்ட பதிப்பு மேலே உள்ள தேதியுடன் இந்தப் பக்கத்தில் வெளியிடப்படும்.</p>
+
+      <h2>தொடர்பு</h2>
+      <p>இந்தத் தனியுரிமைக் கொள்கை குறித்த கேள்விகளுக்கு எங்களைத் தொடர்பு கொள்ளுங்கள்:
+        <a href="mailto:gurubakthisupport@gmail.com?subject=Guru%20Bakthi%20Privacy">gurubakthisupport@gmail.com</a>.</p>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -62,5 +126,24 @@
       <p>© 2026 Guru Bakthi · <a href="mailto:gurubakthisupport@gmail.com">gurubakthisupport@gmail.com</a></p>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var btns = document.querySelectorAll('.lang-btn');
+      var blocks = document.querySelectorAll('.lang-content');
+      function setLang(lang) {
+        blocks.forEach(function (b) { b.hidden = (b.dataset.lang !== lang); });
+        btns.forEach(function (b) { b.classList.toggle('active', b.dataset.lang === lang); });
+        document.documentElement.lang = lang;
+        try { localStorage.setItem('gb-privacy-lang', lang); } catch (e) {}
+      }
+      var saved = 'en';
+      try { saved = localStorage.getItem('gb-privacy-lang') || 'en'; } catch (e) {}
+      btns.forEach(function (b) {
+        b.addEventListener('click', function () { setLang(b.dataset.lang); });
+      });
+      setLang(saved === 'ta' ? 'ta' : 'en');
+    })();
+  </script>
 </body>
 </html>
